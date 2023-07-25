@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <title>Chat App</title>
+      <link rel="stylesheet" href="style.css">
+
+      <link rel="icon" type="image/png" href="lwgChatLogo.png">
+
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+      <div class="app">
+            <div class="screen join-screen active">
+                  <div class="form">
+                        <h2>LWG Chat beitreten</h2>
+                        <div class="form-input">
+                              <label>Spitzname</label>
+                              <input type="text" id="username">
+                        </div>
+                        <div class="form-input">
+                              <button id="join-user">Beitreten</button>
+                        </div>
+                  </div>
+            </div>
+            <div class="screen chat-screen">
+                  <div class="header">
+                        <div class="logo">LWG Chat</div>
+                        <button id="exit-chat">Verlassen</button>
+                  </div>
+                  <div class="messages">          
+                  </div>
+                  <div class="typebox">
+                        <input type="text" id="message-input">
+                        <button style="font-size: 16px; padding: 5px;" 
+                        id="send-message">abschicken</button>
+                  </div>
+            </div>
+      </div>
+
+      <script type="text/javascript" src="socket.io/socket.io.js"></script>
+      <script type="text/javascript" src="code.js"></script>
+</body>
+</html>
+
+
+
+
+
+
